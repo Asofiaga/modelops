@@ -16,7 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: hello-world
-      run: echo “hello world workflows …”
+      run: echo “hello world workflows ”
     - name: run model 
       run: python linear-model.py
+    - name: list model
+      run: ls -la linear-model
 
